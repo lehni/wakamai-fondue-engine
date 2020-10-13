@@ -222,3 +222,16 @@ test("null bytes are omitted", async () => {
 		expect(nullBytes.length).toBe(0);
 	}
 });
+
+test("Extracts charset", async () => {
+	const fondue = await WFTestFont();
+
+	expect(fondue.categorisedCharacters).toEqual([
+		{
+			category: "Letter",
+			chars: ["0041"],
+			script: "latin",
+			subCategory: "Uppercase",
+		},
+	]);
+});
