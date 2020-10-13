@@ -5,7 +5,7 @@ import languageMapping from "../tools/ot-to-html-lang.js";
 import getFormat from "../tools/summary/format.js";
 import getFileSize from "../tools/summary/file-size.js";
 import getFilename from "../tools/summary/filename.js";
-import glyphData from "../tools/GlyphData.json";
+import glyphData from "../tools/GlyphData.js";
 
 export default class Fondue {
 	constructor(font) {
